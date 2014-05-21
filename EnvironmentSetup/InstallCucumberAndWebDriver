@@ -1,0 +1,9 @@
+# Install Cucumber and WebDriver
+
+After successfully installed Ruby, now we need to type "***sudo gem install cucumber selenium-webdriver***" in "Terminal" to install Cucumber and Selenium-WebDriver.
+
+InstallCucumberAndWebDriver1.png
+
+After install, you can run command "cucumber --help" to check.
+
+InstallCucumberAndWebDriver2.png
