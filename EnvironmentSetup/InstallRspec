@@ -1,4 +1,4 @@
 # Install Rspec
 
-Type "***sudo gem install rspec***"
+Type `sudo gem install rspec`
 
