@@ -12,4 +12,7 @@
     * [Print the browser's title twice](simplewebdrivertestbyruby/PrintTheBrowsersTitleTwice)
     * [Close browser and exit "irb"](simplewebdrivertestbyruby/CloseBrowser)
     * [Run the script we just input in "irb"](simplewebdrivertestbyruby/RunTheScriptWeJustInputInirb)
+* [Start with Cucumber](StartWithCucumber/StartWithCucumber)
+    * [Build calculator functions to test with in Ruby](StartWithCucumber/BuildCalculatorFunctionsToTestWithInRuby)
+    * [Create Cucumber feature file to test calculator](StartWithCucumber/CreateCucumberFeatureFileToTestCalculator)
 
