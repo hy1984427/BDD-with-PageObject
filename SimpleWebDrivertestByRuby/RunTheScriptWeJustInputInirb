@@ -12,6 +12,6 @@ Then we will open the "sample.rb" to edit it, and copy the script we just type i
 
 Go back to "Terminal" and type `ruby sample.rb` to run the script, and you will see the same process we did in "irb", and see the two browser titles in "Terminal".
 
-![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/EditSampleRB.png "run sample.rb")
+![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/RubySampleRB.png "run sample.rb")
 
 *Now you can see the browser titles are different from the first time and second time.*
