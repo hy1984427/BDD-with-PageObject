@@ -19,4 +19,12 @@
     * [Adding feature to test division in calculator](StartWithCucumber/AddingFeatureToTestDivisionInCalculator)
     * [Adding step definitions to support feature files](StartWithCucumber/AddingStepDefinitionsToSupportFeatureFiles)
     * [Run Cucumber features](StartWithCucumber/RunCucumberFeatures)
+* [Migarate the Selenium-WebDriver sample to Cucumber feature](MigarateTheSeleniumWebdriverSampleToCucumberFeature/MigarateTheSeleniumWebdriverSampleToCucumberFeature)
+    * [Adding feature file of Selenium-WebDriver sample](MigarateTheSeleniumWebdriverSampleToCucumberFeature/AddingFeatureFileOfSeleniumWebdriverSample)
+    * [Adding step definitions to support sample feature](MigarateTheSeleniumWebdriverSampleToCucumberFeature/AddingStepDefinitionsToSupportSampleFeature)
+    * [Separate the content in Selenium-WebDriver sample.rb into different sections](MigarateTheSeleniumWebdriverSampleToCucumberFeature/SeparateTheContentInSeleniumWebdriverSamplerbIntoDifferentSections)
+    * [Abstract Google URL as a parameter](MigarateTheSeleniumWebdriverSampleToCucumberFeature/AbstractGoogleUrlAsAParameter)
+    * [Abstract search keyword as a parameter](MigarateTheSeleniumWebdriverSampleToCucumberFeature/AbstractSearchKeywordAsAParameter)
+    * [Run cucumber to see the result of Selenium-WebDriver sample test](MigarateTheSeleniumWebdriverSampleToCucumberFeature/rRunCucumberToSeeTheResultOfSeleniumWebdriverSampleTest)
+    * [Add assertion to both feature and step definition](MigarateTheSeleniumWebdriverSampleToCucumberFeature/AddAssertionToBothFeatureAndStepDefinition)
 
