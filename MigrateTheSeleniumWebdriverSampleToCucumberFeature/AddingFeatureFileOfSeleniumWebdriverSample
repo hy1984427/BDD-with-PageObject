@@ -8,7 +8,7 @@ Add one feature file "sample.feature" for Selenium-WebDriver sample under "featu
 
 ![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/CreateSeleniumWebDriverSampleFeature.png "Create Selenium-WebDriver sample.frature")
 
-Edit "sample.feature" to contains following content:
+Edit "sample.feature" to contain following content:
 
 <pre><code>Feature:
 In order to check the search result

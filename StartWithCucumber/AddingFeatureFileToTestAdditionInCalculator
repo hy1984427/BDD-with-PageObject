@@ -8,7 +8,7 @@ Create calculator addition feature file as following:
 
 ![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/CreateAdditionFeature.png "Create addition.feature file")
 
-Edit the feature file to contains following content:
+Edit the feature file to contain following content:
 
 <pre><code>Feature: Addition
 	In order to avoid silly mistakes

@@ -8,7 +8,7 @@ In "sample.feature", we need to change the last step to:
 
 ![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/SeleniumWebDriverSampleFeatureAssertion.png "Add assertion in Selenium-WebDriver sample.feature")
 
-And in "sample.rb", we need to change one step:
+And in "sample.rb", we need to change the last step as well:
 
 <pre><code>Then /I should see the browser title has "(.*?)"/ do |partial_title|
     @driver.title.include?(partial_title)

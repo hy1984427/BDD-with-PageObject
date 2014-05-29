@@ -14,7 +14,7 @@ Create "calculator_steps" to support calculator features:
 
 ![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/CreateCalculatorStepsRB.png "Create calculator_steps.rb")
 
-Edit "calculator_steps.rb" to contains following content:
+Edit "calculator_steps.rb" to contain following content:
 
 <pre><code># encoding: utf-8
 begin require 'rspec/expectations'; rescue LoadError; require 'spec/expectations'; end

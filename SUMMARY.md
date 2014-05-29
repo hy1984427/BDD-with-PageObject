@@ -30,3 +30,13 @@
     * [Run cucumber test with assertion](MigrateTheSeleniumWebdriverSampleToCucumberFeature/RunCucumberTestWithAssertion)
     * [Abstract the setup and tire down steps into features/support/env.rb](MigrateTheSeleniumWebdriverSampleToCucumberFeature/AbstractTheSetupAndTireDownStepsIntoFeaturesSupportEnvRb)
     * [Run Cucumber test with env.rb](MigrateTheSeleniumWebdriverSampleToCucumberFeature/RunCucumberTestWithEnvRb)
+* [Use BDD in a real world](UseBDDInARealWorld/UseBDDInARealWorld)
+    * [Adding feature for buying book](UseBDDInARealWorld/AddingBuyBookFeature)
+    * [Adding step definitions for buying book](UseBDDInARealWorld/AddingStepDefinitionsForBuyingBook)
+    * [Abstract the step of opening site into a method](UseBDDInARealWorld/AbstractTheStepOfOpenningSiteIntoAMethod)
+    * [Abstract the step of searching by keyword into a method](UseBDDInARealWorld/AbstractTheStepOfSearchingByKeywordIntoAMethod)
+    * [Abstract the step of opening the first book into a method](UseBDDInARealWorld/AbstractTheStepOfOpeningTheFirstBookIntoAMethod)
+    * [Abstract the step of adding first book to shopping cart into methods](UseBDDInARealWorld/AbstractTheStepOfAddingFirstBookToShoppingCartIntoMethods)
+    * [Abstract the step of verifying item in shopping cart into methods](UseBDDInARealWorld/AbstractTheStepOfVerifyingItemInShoppingCartIntoMethods)
+    * [Abstract method find_element into a generic method findElementBy(type,value)](UseBDDInARealWorld/AbstractMethodFindElementIntoAGenericMethod)
+

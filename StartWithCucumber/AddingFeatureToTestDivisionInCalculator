@@ -6,7 +6,7 @@ Create calculator division feature file as following:
 
 ![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/CreateDivisionFeature.png "Create division.feature file")
 
-Edit the feature file to contains following content:
+Edit the feature file to contain following content:
 
 <pre><code>Feature: Division
 In order to avoid silly mistakes
