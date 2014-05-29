@@ -4,7 +4,7 @@ Now we need to run Selenium-WebDriver sample test under "Cucumber" folder. Use
 
 `cd ../..`
 
-`cucumber features/addition.feature`
+`cucumber features/sample.feature`
 
 to just run only one feature - features/sample.feature, and check the result.
 
