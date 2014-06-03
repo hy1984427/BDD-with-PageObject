@@ -39,4 +39,13 @@
     * [Abstract the step of adding first book to shopping cart into methods](UseBDDInARealWorld/AbstractTheStepOfAddingFirstBookToShoppingCartIntoMethods)
     * [Abstract the step of verifying item in shopping cart into methods](UseBDDInARealWorld/AbstractTheStepOfVerifyingItemInShoppingCartIntoMethods)
     * [Abstract method find_element into a generic method findElementBy(type,value)](UseBDDInARealWorld/AbstractMethodFindElementIntoAGenericMethod)
+    * [Combine the methods findElementBy(type,value) and element.click into one single method clickElementBy(type,value)](UseBDDInARealWorld/CombineTheMethodsFindElementByAndElementClickIntoOneSingleMethodClickElementBy)
+    * [Run the buying book feature to see the result](UseBDDInARealWorld/RunTheBuyBookFeatureToSeeTheResult)
+    * [Adding feature for removing book from shopping cart](UseBDDInARealWorld/AddingFeatureForRemovingBookFromShoppingCart)
+    * [Adding step definitions for removing book](UseBDDInARealWorld/AddingStepDefinitionsForRemovingBook)
+    * [Add time out settings to env.rb](UseBDDInARealWorld/AddTimeOutSettingsToEnvRB)
+    * [Run the removing book feature to see the result](UseBDDInARealWorld/RunTheRemovingBookFeatureToSeeResult)
+    * [Adding a data driven scenario of adding book feature](UseBDDInARealWorld/AddingADataDrivenScenarioOfAddingBookFeature)
+    * [Adding tags to different scenario to run them separately](UseBDDInARealWorld/AddingTagToDifferentScenarioToRunThemSeparately)
+    * [Run the buying book feature with tags](UseBDDInARealWorld/RunTheBuyingBookFeatureWithTags)
 
