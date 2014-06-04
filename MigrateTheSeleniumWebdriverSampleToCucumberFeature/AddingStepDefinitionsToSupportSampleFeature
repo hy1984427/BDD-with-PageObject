@@ -1,4 +1,4 @@
-# Adding step definitions to support sample feature
+# Add step definitions to support sample feature
 
 Create "sample.rb" to support sample feature under "features/step_definations" folder:
 

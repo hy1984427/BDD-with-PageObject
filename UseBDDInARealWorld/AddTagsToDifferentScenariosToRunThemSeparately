@@ -1,4 +1,4 @@
-# Adding tag to different scenario to run them separately
+# Add tags to different scenarios to run them separately
 
 To run the original buying book and the data driven scenario separately, we need to add tags to them:
 

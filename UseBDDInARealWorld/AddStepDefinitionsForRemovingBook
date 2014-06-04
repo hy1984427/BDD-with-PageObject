@@ -1,4 +1,4 @@
-# Adding step definitions for removing book
+# Add step definitions for removing book
 
 Similarly, we are going to add "remove_book.rb" under "features/step_definations".
 

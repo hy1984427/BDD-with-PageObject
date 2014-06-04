@@ -1,4 +1,4 @@
-# Adding feature for removing book from shopping cart
+# Add feature for removing book from shopping cart
 
 Like adding buying book feature, we are going to add "remove_book.feature" from shopping cart under "features" folder.
 

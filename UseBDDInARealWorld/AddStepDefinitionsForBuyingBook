@@ -1,4 +1,4 @@
-# Adding step definitions for buying book
+# Add step definitions for buying book
 
 Similarly, we are going to add "buy_book.rb" under "features/step_definations".
 

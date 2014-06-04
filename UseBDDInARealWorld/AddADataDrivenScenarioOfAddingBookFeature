@@ -1,10 +1,10 @@
-# Adding a data driven scenario of adding book feature
+# Add a data driven scenario of adding book feature
 
 To see how Cucumber run feature which is data driven, we are going to add one scenario in "buy_book.feature" under "features" folder.
 
 `cd features`
 
-![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/AddDataDriven.png "Change folder to features")
+![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/ChangeFolderToFeatures.png "Change folder to features")
 
 Then we need to add following content to it.
 
