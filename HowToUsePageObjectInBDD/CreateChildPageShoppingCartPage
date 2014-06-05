@@ -29,7 +29,6 @@ We need to copy following content to "shopping_cart.rb" and delete them from "ba
 
 	def verifyItemRemovedNotShownInShoppingCart
 		book=findElementBy("xpath", "//span[@class=\"a-size-medium a-text-bold\"]")
-		@driver.save_screenshot ("screenshot.png")
 		book.text.should == "Subtotal (0 item): $0.00"
 	end
 end
