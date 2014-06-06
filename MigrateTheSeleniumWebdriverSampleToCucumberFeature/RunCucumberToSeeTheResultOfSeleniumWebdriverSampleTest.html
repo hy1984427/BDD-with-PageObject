@@ -1,0 +1,1001 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        
+        <meta charset="UTF-8">
+        <title>Run cucumber to see the result of Selenium-WebDriver sample test | BDD with PageObject</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="hy1984427">
+        <meta name="description" content="You will see how we build a BDD automation test framework with Page Object from scratch step by step.">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AddAssertionToBothFeatureAndStepDefinition.html" />
+        
+        
+        <link rel="prev" href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AbstractSearchKeywordAsAParameter.html" />
+        
+
+        <meta property="og:title" content="Run cucumber to see the result of Selenium-WebDriver sample test | BDD with PageObject">
+        <meta property="og:site_name" content="BDD with PageObject">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/hy1984427">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    </head>
+    <body>
+        
+        
+
+        <link rel="stylesheet" href="../gitbook/style.css">
+        
+
+
+        
+    <div class="book" data-github="hy1984427/BDD-with-PageObject" data-level="4.6" data-basepath=".." data-revision="1402025995059">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/hy1984427/BDD-with-PageObject" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/hy1984427/BDD-with-PageObject/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/hy1984427/BDD-with-PageObject/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >BDD with PageObject</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/hy1984427" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/hy1984427/BDD-with-PageObject/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/hy1984427/BDD-with-PageObject/edit/master/MigrateTheSeleniumWebdriverSampleToCucumberFeature/RunCucumberToSeeTheResultOfSeleniumWebdriverSampleTest.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+    
+        <li class="chapter " data-level="1" data-path="EnvironmentSetup/EnvironmentSetup.html">
+            
+            <a href="../EnvironmentSetup/EnvironmentSetup.html">
+                <i class="fa fa-check"></i> <b>1.</b> Environment Setup
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="EnvironmentSetup/InstallRuby.html">
+            
+            <a href="../EnvironmentSetup/InstallRuby.html">
+                <i class="fa fa-check"></i> <b>1.1.</b> Install Ruby
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="EnvironmentSetup/InstallCucumberAndWebDriver.html">
+            
+            <a href="../EnvironmentSetup/InstallCucumberAndWebDriver.html">
+                <i class="fa fa-check"></i> <b>1.2.</b> Install Cucumber and WebDriver
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="EnvironmentSetup/InstallRspec.html">
+            
+            <a href="../EnvironmentSetup/InstallRspec.html">
+                <i class="fa fa-check"></i> <b>1.3.</b> Install Rspec
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="SimpleWebDriverTestByRuby/SimpleWebDriverTestByRuby.html">
+            
+            <a href="../SimpleWebDriverTestByRuby/SimpleWebDriverTestByRuby.html">
+                <i class="fa fa-check"></i> <b>2.</b> Use Ruby script to generate a simple WebDriver test
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="SimpleWebDriverTestByRuby/ImportRequiredLibs.html">
+            
+            <a href="../SimpleWebDriverTestByRuby/ImportRequiredLibs.html">
+                <i class="fa fa-check"></i> <b>2.1.</b> Import required libs
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="SimpleWebDriverTestByRuby/InitialBrowser.html">
+            
+            <a href="../SimpleWebDriverTestByRuby/InitialBrowser.html">
+                <i class="fa fa-check"></i> <b>2.2.</b> Initial Browser
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="SimpleWebDriverTestByRuby/OpenGoogleInBrowser.html">
+            
+            <a href="../SimpleWebDriverTestByRuby/OpenGoogleInBrowser.html">
+                <i class="fa fa-check"></i> <b>2.3.</b> Open Google in browser
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="SimpleWebDriverTestByRuby/SearchByKeyword.html">
+            
+            <a href="../SimpleWebDriverTestByRuby/SearchByKeyword.html">
+                <i class="fa fa-check"></i> <b>2.4.</b> Search by keyword
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="SimpleWebDriverTestByRuby/PrintTheBrowsersTitleTwice.html">
+            
+            <a href="../SimpleWebDriverTestByRuby/PrintTheBrowsersTitleTwice.html">
+                <i class="fa fa-check"></i> <b>2.5.</b> Print the browser&#39;s title twice
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="SimpleWebDriverTestByRuby/CloseBrowser.html">
+            
+            <a href="../SimpleWebDriverTestByRuby/CloseBrowser.html">
+                <i class="fa fa-check"></i> <b>2.6.</b> Close browser and exit &quot;irb&quot;
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="SimpleWebDriverTestByRuby/RunTheScriptWeJustInputInirb.html">
+            
+            <a href="../SimpleWebDriverTestByRuby/RunTheScriptWeJustInputInirb.html">
+                <i class="fa fa-check"></i> <b>2.7.</b> Run the script we just input in &quot;irb&quot;
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="StartWithCucumber/StartWithCucumber.html">
+            
+            <a href="../StartWithCucumber/StartWithCucumber.html">
+                <i class="fa fa-check"></i> <b>3.</b> Start with Cucumber
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="StartWithCucumber/BuildCalculatorFunctionsToTestWithInRuby.html">
+            
+            <a href="../StartWithCucumber/BuildCalculatorFunctionsToTestWithInRuby.html">
+                <i class="fa fa-check"></i> <b>3.1.</b> Build calculator functions to test with in Ruby
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="StartWithCucumber/CreateCucumberFeatureFileToTestCalculator.html">
+            
+            <a href="../StartWithCucumber/CreateCucumberFeatureFileToTestCalculator.html">
+                <i class="fa fa-check"></i> <b>3.2.</b> Create Cucumber feature file to test calculator
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="StartWithCucumber/AddingFeatureFileToTestAdditionInCalculator.html">
+            
+            <a href="../StartWithCucumber/AddingFeatureFileToTestAdditionInCalculator.html">
+                <i class="fa fa-check"></i> <b>3.3.</b> Add feature to test addition in calculator
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="StartWithCucumber/AddingFeatureToTestDivisionInCalculator.html">
+            
+            <a href="../StartWithCucumber/AddingFeatureToTestDivisionInCalculator.html">
+                <i class="fa fa-check"></i> <b>3.4.</b> Add feature to test division in calculator
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="StartWithCucumber/AddingStepDefinitionsToSupportFeatureFiles.html">
+            
+            <a href="../StartWithCucumber/AddingStepDefinitionsToSupportFeatureFiles.html">
+                <i class="fa fa-check"></i> <b>3.5.</b> Add step definitions to support feature files
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="StartWithCucumber/RunCucumberFeatures.html">
+            
+            <a href="../StartWithCucumber/RunCucumberFeatures.html">
+                <i class="fa fa-check"></i> <b>3.6.</b> Run Cucumber features
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="MigrateTheSeleniumWebdriverSampleToCucumberFeature/MigrateTheSeleniumWebdriverSampleToCucumberFeature.html">
+            
+            <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/MigrateTheSeleniumWebdriverSampleToCucumberFeature.html">
+                <i class="fa fa-check"></i> <b>4.</b> Migrate the Selenium-WebDriver sample to Cucumber feature
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="MigrateTheSeleniumWebdriverSampleToCucumberFeature/AddingFeatureFileOfSeleniumWebdriverSample.html">
+            
+            <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AddingFeatureFileOfSeleniumWebdriverSample.html">
+                <i class="fa fa-check"></i> <b>4.1.</b> Add feature file of Selenium-WebDriver sample
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="MigrateTheSeleniumWebdriverSampleToCucumberFeature/AddingStepDefinitionsToSupportSampleFeature.html">
+            
+            <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AddingStepDefinitionsToSupportSampleFeature.html">
+                <i class="fa fa-check"></i> <b>4.2.</b> Add step definitions to support sample feature
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="MigrateTheSeleniumWebdriverSampleToCucumberFeature/SeparateTheContentInSeleniumWebdriverSamplerbIntoDifferentSections.html">
+            
+            <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/SeparateTheContentInSeleniumWebdriverSamplerbIntoDifferentSections.html">
+                <i class="fa fa-check"></i> <b>4.3.</b> Separate the content in Selenium-WebDriver sample.rb into different sections
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="MigrateTheSeleniumWebdriverSampleToCucumberFeature/AbstractGoogleUrlAsAParameter.html">
+            
+            <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AbstractGoogleUrlAsAParameter.html">
+                <i class="fa fa-check"></i> <b>4.4.</b> Abstract Google URL as a parameter
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="MigrateTheSeleniumWebdriverSampleToCucumberFeature/AbstractSearchKeywordAsAParameter.html">
+            
+            <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AbstractSearchKeywordAsAParameter.html">
+                <i class="fa fa-check"></i> <b>4.5.</b> Abstract search keyword as a parameter
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="MigrateTheSeleniumWebdriverSampleToCucumberFeature/RunCucumberToSeeTheResultOfSeleniumWebdriverSampleTest.html">
+            
+            <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/RunCucumberToSeeTheResultOfSeleniumWebdriverSampleTest.html">
+                <i class="fa fa-check"></i> <b>4.6.</b> Run cucumber to see the result of Selenium-WebDriver sample test
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="MigrateTheSeleniumWebdriverSampleToCucumberFeature/AddAssertionToBothFeatureAndStepDefinition.html">
+            
+            <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AddAssertionToBothFeatureAndStepDefinition.html">
+                <i class="fa fa-check"></i> <b>4.7.</b> Add assertion to both feature and step definition
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="MigrateTheSeleniumWebdriverSampleToCucumberFeature/RunCucumberTestWithAssertion.html">
+            
+            <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/RunCucumberTestWithAssertion.html">
+                <i class="fa fa-check"></i> <b>4.8.</b> Run cucumber test with assertion
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="MigrateTheSeleniumWebdriverSampleToCucumberFeature/AbstractTheSetupAndTireDownStepsIntoFeaturesSupportEnvRb.html">
+            
+            <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AbstractTheSetupAndTireDownStepsIntoFeaturesSupportEnvRb.html">
+                <i class="fa fa-check"></i> <b>4.9.</b> Abstract the setup and tire down steps into features/support/env.rb
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="MigrateTheSeleniumWebdriverSampleToCucumberFeature/RunCucumberTestWithEnvRb.html">
+            
+            <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/RunCucumberTestWithEnvRb.html">
+                <i class="fa fa-check"></i> <b>4.10.</b> Run Cucumber test with env.rb
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="UseBDDInARealWorld/UseBDDInARealWorld.html">
+            
+            <a href="../UseBDDInARealWorld/UseBDDInARealWorld.html">
+                <i class="fa fa-check"></i> <b>5.</b> Use BDD in a real world
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="UseBDDInARealWorld/AddBuyBookFeature">
+            
+            <a href="../UseBDDInARealWorld/AddBuyBookFeature">
+                <i class="fa fa-check"></i> <b>5.1.</b> Add feature for buying book
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="UseBDDInARealWorld/AddStepDefinitionsForBuyingBook.html">
+            
+            <a href="../UseBDDInARealWorld/AddStepDefinitionsForBuyingBook.html">
+                <i class="fa fa-check"></i> <b>5.2.</b> Add step definitions for buying book
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="UseBDDInARealWorld/AbstractTheStepOfOpenningSiteIntoAMethod.html">
+            
+            <a href="../UseBDDInARealWorld/AbstractTheStepOfOpenningSiteIntoAMethod.html">
+                <i class="fa fa-check"></i> <b>5.3.</b> Abstract the step of opening site into a method
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="UseBDDInARealWorld/AbstractTheStepOfSearchingByKeywordIntoAMethod.html">
+            
+            <a href="../UseBDDInARealWorld/AbstractTheStepOfSearchingByKeywordIntoAMethod.html">
+                <i class="fa fa-check"></i> <b>5.4.</b> Abstract the step of searching by keyword into a method
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="UseBDDInARealWorld/AbstractTheStepOfOpeningTheFirstBookIntoAMethod.html">
+            
+            <a href="../UseBDDInARealWorld/AbstractTheStepOfOpeningTheFirstBookIntoAMethod.html">
+                <i class="fa fa-check"></i> <b>5.5.</b> Abstract the step of opening the first book into a method
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="UseBDDInARealWorld/AbstractTheStepOfAddingFirstBookToShoppingCartIntoMethods.html">
+            
+            <a href="../UseBDDInARealWorld/AbstractTheStepOfAddingFirstBookToShoppingCartIntoMethods.html">
+                <i class="fa fa-check"></i> <b>5.6.</b> Abstract the step of adding first book to shopping cart into methods
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="UseBDDInARealWorld/AbstractTheStepOfVerifyingItemInShoppingCartIntoMethods.html">
+            
+            <a href="../UseBDDInARealWorld/AbstractTheStepOfVerifyingItemInShoppingCartIntoMethods.html">
+                <i class="fa fa-check"></i> <b>5.7.</b> Abstract the step of verifying item in shopping cart into methods
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="UseBDDInARealWorld/AbstractMethodFindElementIntoAGenericMethod.html">
+            
+            <a href="../UseBDDInARealWorld/AbstractMethodFindElementIntoAGenericMethod.html">
+                <i class="fa fa-check"></i> <b>5.8.</b> Abstract method find_element into a generic method findElementBy(type,value)
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="UseBDDInARealWorld/CombineTheMethodsFindElementByAndElementClickIntoOneSingleMethodClickElementBy.html">
+            
+            <a href="../UseBDDInARealWorld/CombineTheMethodsFindElementByAndElementClickIntoOneSingleMethodClickElementBy.html">
+                <i class="fa fa-check"></i> <b>5.9.</b> Combine the methods findElementBy(type,value) and element.click into one single method clickElementBy(type,value)
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="UseBDDInARealWorld/RunTheBuyBookFeatureToSeeTheResult.html">
+            
+            <a href="../UseBDDInARealWorld/RunTheBuyBookFeatureToSeeTheResult.html">
+                <i class="fa fa-check"></i> <b>5.10.</b> Run the buying book feature to see the result
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="UseBDDInARealWorld/AddFeatureForRemovingBookFromShoppingCart.html">
+            
+            <a href="../UseBDDInARealWorld/AddFeatureForRemovingBookFromShoppingCart.html">
+                <i class="fa fa-check"></i> <b>5.11.</b> Add feature for removing book from shopping cart
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="UseBDDInARealWorld/AddStepDefinitionsForRemovingBook.html">
+            
+            <a href="../UseBDDInARealWorld/AddStepDefinitionsForRemovingBook.html">
+                <i class="fa fa-check"></i> <b>5.12.</b> Add step definitions for removing book
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="UseBDDInARealWorld/AddTimeOutSettingsToEnvRB.html">
+            
+            <a href="../UseBDDInARealWorld/AddTimeOutSettingsToEnvRB.html">
+                <i class="fa fa-check"></i> <b>5.13.</b> Add time out settings to env.rb
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="UseBDDInARealWorld/RunTheRemovingBookFeatureToSeeResult.html">
+            
+            <a href="../UseBDDInARealWorld/RunTheRemovingBookFeatureToSeeResult.html">
+                <i class="fa fa-check"></i> <b>5.14.</b> Run the removing book feature to see the result
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.15" data-path="UseBDDInARealWorld/AddADataDrivenScenarioOfAddingBookFeature.html">
+            
+            <a href="../UseBDDInARealWorld/AddADataDrivenScenarioOfAddingBookFeature.html">
+                <i class="fa fa-check"></i> <b>5.15.</b> Add a data driven scenario of adding book feature
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.16" data-path="UseBDDInARealWorld/AddTagsToDifferentScenariosToRunThemSeparately.html">
+            
+            <a href="../UseBDDInARealWorld/AddTagsToDifferentScenariosToRunThemSeparately.html">
+                <i class="fa fa-check"></i> <b>5.16.</b> Add tags to different scenarios to run them separately
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.17" data-path="UseBDDInARealWorld/RunTheBuyingBookFeatureWithTags.html">
+            
+            <a href="../UseBDDInARealWorld/RunTheBuyingBookFeatureWithTags.html">
+                <i class="fa fa-check"></i> <b>5.17.</b> Run the buying book feature with tags
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.18" data-path="UseBDDInARealWorld/AddScenarioOfAddingBookToShoppingCartFromWishList.html">
+            
+            <a href="../UseBDDInARealWorld/AddScenarioOfAddingBookToShoppingCartFromWishList.html">
+                <i class="fa fa-check"></i> <b>5.18.</b> Add scenario of adding book to shopping cart from wish list
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.19" data-path="UseBDDInARealWorld/AddStepDefinitionsForAddingBookToShoppingCartFromWishList.html">
+            
+            <a href="../UseBDDInARealWorld/AddStepDefinitionsForAddingBookToShoppingCartFromWishList.html">
+                <i class="fa fa-check"></i> <b>5.19.</b> Add step definitions for adding book to shopping cart from wish list
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.20" data-path="UseBDDInARealWorld/AbstractTheFindElementByAndClickElementByInStepsIntoMeaningfulMethods.html">
+            
+            <a href="../UseBDDInARealWorld/AbstractTheFindElementByAndClickElementByInStepsIntoMeaningfulMethods.html">
+                <i class="fa fa-check"></i> <b>5.20.</b> Abstract findElementBy and ClickElementBy in steps into meaningful methods
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.21" data-path="UseBDDInARealWorld/AddTakingScreenshotToTheAssertionStep.html">
+            
+            <a href="../UseBDDInARealWorld/AddTakingScreenshotToTheAssertionStep.html">
+                <i class="fa fa-check"></i> <b>5.21.</b> Add taking screenshot to the assertion step
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.22" data-path="UseBDDInARealWorld/RunTheBuyingBookFromWishListFeature.html">
+            
+            <a href="../UseBDDInARealWorld/RunTheBuyingBookFromWishListFeature.html">
+                <i class="fa fa-check"></i> <b>5.22.</b> Run the buying book from wish list feature
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="HowToUsePageObjectInBDD/HowToUsePageObjectInBDD.html">
+            
+            <a href="../HowToUsePageObjectInBDD/HowToUsePageObjectInBDD.html">
+                <i class="fa fa-check"></i> <b>6.</b> How to use Page Object in BDD
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="HowToUsePageObjectInBDD/CreateFolderStructureForPages.html">
+            
+            <a href="../HowToUsePageObjectInBDD/CreateFolderStructureForPages.html">
+                <i class="fa fa-check"></i> <b>6.1.</b> Create folder structure for pages
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="HowToUsePageObjectInBDD/CreateBasePageToConatinsAllMethods.html">
+            
+            <a href="../HowToUsePageObjectInBDD/CreateBasePageToConatinsAllMethods.html">
+                <i class="fa fa-check"></i> <b>6.2.</b> Create base page to contains all methods
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="HowToUsePageObjectInBDD/CreateChildPageHomePage.html">
+            
+            <a href="../HowToUsePageObjectInBDD/CreateChildPageHomePage.html">
+                <i class="fa fa-check"></i> <b>6.3.</b> Create child page - home page
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="HowToUsePageObjectInBDD/CreateChildPageItemDetailsPage.html">
+            
+            <a href="../HowToUsePageObjectInBDD/CreateChildPageItemDetailsPage.html">
+                <i class="fa fa-check"></i> <b>6.4.</b> Create child page - item details page
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="HowToUsePageObjectInBDD/CreateChildPageLoginPage.html">
+            
+            <a href="../HowToUsePageObjectInBDD/CreateChildPageLoginPage.html">
+                <i class="fa fa-check"></i> <b>6.5.</b> Create child page - login page
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="HowToUsePageObjectInBDD/CreateChildPageSearchResultPage.html">
+            
+            <a href="../HowToUsePageObjectInBDD/CreateChildPageSearchResultPage.html">
+                <i class="fa fa-check"></i> <b>6.6.</b> Create child page - search result page
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="HowToUsePageObjectInBDD/CreateChildPageShoppingCartPage.html">
+            
+            <a href="../HowToUsePageObjectInBDD/CreateChildPageShoppingCartPage.html">
+                <i class="fa fa-check"></i> <b>6.7.</b> Create child page - shopping cart page
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="HowToUsePageObjectInBDD/CreateChildPageWishListPage.html">
+            
+            <a href="../HowToUsePageObjectInBDD/CreateChildPageWishListPage.html">
+                <i class="fa fa-check"></i> <b>6.8.</b> Create child page - wish list page
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="HowToUsePageObjectInBDD/UpdateBasePage.html">
+            
+            <a href="../HowToUsePageObjectInBDD/UpdateBasePage.html">
+                <i class="fa fa-check"></i> <b>6.9.</b> Update base page
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="HowToUsePageObjectInBDD/UpdateEnvRB.html">
+            
+            <a href="../HowToUsePageObjectInBDD/UpdateEnvRB.html">
+                <i class="fa fa-check"></i> <b>6.10.</b> Update env.rb
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="HowToUsePageObjectInBDD/UpdateBuyBookRB.html">
+            
+            <a href="../HowToUsePageObjectInBDD/UpdateBuyBookRB.html">
+                <i class="fa fa-check"></i> <b>6.11.</b> Update buy_book.rb
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="HowToUsePageObjectInBDD/UpdateRemoveBookRB.html">
+            
+            <a href="../HowToUsePageObjectInBDD/UpdateRemoveBookRB.html">
+                <i class="fa fa-check"></i> <b>6.12.</b> Update remove_book.rb
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="HowToUsePageObjectInBDD/GenerateReportWithStyle.html">
+            
+            <a href="../HowToUsePageObjectInBDD/GenerateReportWithStyle.html">
+                <i class="fa fa-check"></i> <b>6.13.</b> Generate report with style
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 40.298507462686565%;min-width: 38.80597014925373%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../EnvironmentSetup/EnvironmentSetup.html" title="Environment Setup" class="chapter done new-chapter" data-progress="1" style="left: 1.492537313432836%;"></a>
+    
+        <a href="../EnvironmentSetup/InstallRuby.html" title="Install Ruby" class="chapter done " data-progress="1.1" style="left: 2.985074626865672%;"></a>
+    
+        <a href="../EnvironmentSetup/InstallCucumberAndWebDriver.html" title="Install Cucumber and WebDriver" class="chapter done " data-progress="1.2" style="left: 4.477611940298507%;"></a>
+    
+        <a href="../EnvironmentSetup/InstallRspec.html" title="Install Rspec" class="chapter done " data-progress="1.3" style="left: 5.970149253731344%;"></a>
+    
+        <a href="../SimpleWebDriverTestByRuby/SimpleWebDriverTestByRuby.html" title="Use Ruby script to generate a simple WebDriver test" class="chapter done new-chapter" data-progress="2" style="left: 7.462686567164179%;"></a>
+    
+        <a href="../SimpleWebDriverTestByRuby/ImportRequiredLibs.html" title="Import required libs" class="chapter done " data-progress="2.1" style="left: 8.955223880597014%;"></a>
+    
+        <a href="../SimpleWebDriverTestByRuby/InitialBrowser.html" title="Initial Browser" class="chapter done " data-progress="2.2" style="left: 10.447761194029852%;"></a>
+    
+        <a href="../SimpleWebDriverTestByRuby/OpenGoogleInBrowser.html" title="Open Google in browser" class="chapter done " data-progress="2.3" style="left: 11.940298507462687%;"></a>
+    
+        <a href="../SimpleWebDriverTestByRuby/SearchByKeyword.html" title="Search by keyword" class="chapter done " data-progress="2.4" style="left: 13.432835820895523%;"></a>
+    
+        <a href="../SimpleWebDriverTestByRuby/PrintTheBrowsersTitleTwice.html" title="Print the browser&#39;s title twice" class="chapter done " data-progress="2.5" style="left: 14.925373134328359%;"></a>
+    
+        <a href="../SimpleWebDriverTestByRuby/CloseBrowser.html" title="Close browser and exit &quot;irb&quot;" class="chapter done " data-progress="2.6" style="left: 16.417910447761194%;"></a>
+    
+        <a href="../SimpleWebDriverTestByRuby/RunTheScriptWeJustInputInirb.html" title="Run the script we just input in &quot;irb&quot;" class="chapter done " data-progress="2.7" style="left: 17.91044776119403%;"></a>
+    
+        <a href="../StartWithCucumber/StartWithCucumber.html" title="Start with Cucumber" class="chapter done new-chapter" data-progress="3" style="left: 19.402985074626866%;"></a>
+    
+        <a href="../StartWithCucumber/BuildCalculatorFunctionsToTestWithInRuby.html" title="Build calculator functions to test with in Ruby" class="chapter done " data-progress="3.1" style="left: 20.895522388059703%;"></a>
+    
+        <a href="../StartWithCucumber/CreateCucumberFeatureFileToTestCalculator.html" title="Create Cucumber feature file to test calculator" class="chapter done " data-progress="3.2" style="left: 22.388059701492537%;"></a>
+    
+        <a href="../StartWithCucumber/AddingFeatureFileToTestAdditionInCalculator.html" title="Add feature to test addition in calculator" class="chapter done " data-progress="3.3" style="left: 23.880597014925375%;"></a>
+    
+        <a href="../StartWithCucumber/AddingFeatureToTestDivisionInCalculator.html" title="Add feature to test division in calculator" class="chapter done " data-progress="3.4" style="left: 25.37313432835821%;"></a>
+    
+        <a href="../StartWithCucumber/AddingStepDefinitionsToSupportFeatureFiles.html" title="Add step definitions to support feature files" class="chapter done " data-progress="3.5" style="left: 26.865671641791046%;"></a>
+    
+        <a href="../StartWithCucumber/RunCucumberFeatures.html" title="Run Cucumber features" class="chapter done " data-progress="3.6" style="left: 28.35820895522388%;"></a>
+    
+        <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/MigrateTheSeleniumWebdriverSampleToCucumberFeature.html" title="Migrate the Selenium-WebDriver sample to Cucumber feature" class="chapter done new-chapter" data-progress="4" style="left: 29.850746268656717%;"></a>
+    
+        <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AddingFeatureFileOfSeleniumWebdriverSample.html" title="Add feature file of Selenium-WebDriver sample" class="chapter done " data-progress="4.1" style="left: 31.34328358208955%;"></a>
+    
+        <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/RunCucumberTestWithEnvRb.html" title="Run Cucumber test with env.rb" class="chapter done " data-progress="4.10" style="left: 32.83582089552239%;"></a>
+    
+        <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AddingStepDefinitionsToSupportSampleFeature.html" title="Add step definitions to support sample feature" class="chapter done " data-progress="4.2" style="left: 34.32835820895522%;"></a>
+    
+        <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/SeparateTheContentInSeleniumWebdriverSamplerbIntoDifferentSections.html" title="Separate the content in Selenium-WebDriver sample.rb into different sections" class="chapter done " data-progress="4.3" style="left: 35.82089552238806%;"></a>
+    
+        <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AbstractGoogleUrlAsAParameter.html" title="Abstract Google URL as a parameter" class="chapter done " data-progress="4.4" style="left: 37.3134328358209%;"></a>
+    
+        <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AbstractSearchKeywordAsAParameter.html" title="Abstract search keyword as a parameter" class="chapter done " data-progress="4.5" style="left: 38.80597014925373%;"></a>
+    
+        <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/RunCucumberToSeeTheResultOfSeleniumWebdriverSampleTest.html" title="Run cucumber to see the result of Selenium-WebDriver sample test" class="chapter done " data-progress="4.6" style="left: 40.298507462686565%;"></a>
+    
+        <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AddAssertionToBothFeatureAndStepDefinition.html" title="Add assertion to both feature and step definition" class="chapter  " data-progress="4.7" style="left: 41.791044776119406%;"></a>
+    
+        <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/RunCucumberTestWithAssertion.html" title="Run cucumber test with assertion" class="chapter  " data-progress="4.8" style="left: 43.28358208955224%;"></a>
+    
+        <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AbstractTheSetupAndTireDownStepsIntoFeaturesSupportEnvRb.html" title="Abstract the setup and tire down steps into features/support/env.rb" class="chapter  " data-progress="4.9" style="left: 44.776119402985074%;"></a>
+    
+        <a href="../UseBDDInARealWorld/UseBDDInARealWorld.html" title="Use BDD in a real world" class="chapter  new-chapter" data-progress="5" style="left: 46.26865671641791%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AddBuyBookFeature" title="Add feature for buying book" class="chapter  " data-progress="5.1" style="left: 47.76119402985075%;"></a>
+    
+        <a href="../UseBDDInARealWorld/RunTheBuyBookFeatureToSeeTheResult.html" title="Run the buying book feature to see the result" class="chapter  " data-progress="5.10" style="left: 49.25373134328358%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AddFeatureForRemovingBookFromShoppingCart.html" title="Add feature for removing book from shopping cart" class="chapter  " data-progress="5.11" style="left: 50.74626865671642%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AddStepDefinitionsForRemovingBook.html" title="Add step definitions for removing book" class="chapter  " data-progress="5.12" style="left: 52.23880597014925%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AddTimeOutSettingsToEnvRB.html" title="Add time out settings to env.rb" class="chapter  " data-progress="5.13" style="left: 53.73134328358209%;"></a>
+    
+        <a href="../UseBDDInARealWorld/RunTheRemovingBookFeatureToSeeResult.html" title="Run the removing book feature to see the result" class="chapter  " data-progress="5.14" style="left: 55.223880597014926%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AddADataDrivenScenarioOfAddingBookFeature.html" title="Add a data driven scenario of adding book feature" class="chapter  " data-progress="5.15" style="left: 56.71641791044776%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AddTagsToDifferentScenariosToRunThemSeparately.html" title="Add tags to different scenarios to run them separately" class="chapter  " data-progress="5.16" style="left: 58.208955223880594%;"></a>
+    
+        <a href="../UseBDDInARealWorld/RunTheBuyingBookFeatureWithTags.html" title="Run the buying book feature with tags" class="chapter  " data-progress="5.17" style="left: 59.701492537313435%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AddScenarioOfAddingBookToShoppingCartFromWishList.html" title="Add scenario of adding book to shopping cart from wish list" class="chapter  " data-progress="5.18" style="left: 61.19402985074627%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AddStepDefinitionsForAddingBookToShoppingCartFromWishList.html" title="Add step definitions for adding book to shopping cart from wish list" class="chapter  " data-progress="5.19" style="left: 62.6865671641791%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AddStepDefinitionsForBuyingBook.html" title="Add step definitions for buying book" class="chapter  " data-progress="5.2" style="left: 64.17910447761194%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AbstractTheFindElementByAndClickElementByInStepsIntoMeaningfulMethods.html" title="Abstract findElementBy and ClickElementBy in steps into meaningful methods" class="chapter  " data-progress="5.20" style="left: 65.67164179104478%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AddTakingScreenshotToTheAssertionStep.html" title="Add taking screenshot to the assertion step" class="chapter  " data-progress="5.21" style="left: 67.16417910447761%;"></a>
+    
+        <a href="../UseBDDInARealWorld/RunTheBuyingBookFromWishListFeature.html" title="Run the buying book from wish list feature" class="chapter  " data-progress="5.22" style="left: 68.65671641791045%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AbstractTheStepOfOpenningSiteIntoAMethod.html" title="Abstract the step of opening site into a method" class="chapter  " data-progress="5.3" style="left: 70.14925373134328%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AbstractTheStepOfSearchingByKeywordIntoAMethod.html" title="Abstract the step of searching by keyword into a method" class="chapter  " data-progress="5.4" style="left: 71.64179104477611%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AbstractTheStepOfOpeningTheFirstBookIntoAMethod.html" title="Abstract the step of opening the first book into a method" class="chapter  " data-progress="5.5" style="left: 73.13432835820896%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AbstractTheStepOfAddingFirstBookToShoppingCartIntoMethods.html" title="Abstract the step of adding first book to shopping cart into methods" class="chapter  " data-progress="5.6" style="left: 74.6268656716418%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AbstractTheStepOfVerifyingItemInShoppingCartIntoMethods.html" title="Abstract the step of verifying item in shopping cart into methods" class="chapter  " data-progress="5.7" style="left: 76.11940298507463%;"></a>
+    
+        <a href="../UseBDDInARealWorld/AbstractMethodFindElementIntoAGenericMethod.html" title="Abstract method find_element into a generic method findElementBy(type,value)" class="chapter  " data-progress="5.8" style="left: 77.61194029850746%;"></a>
+    
+        <a href="../UseBDDInARealWorld/CombineTheMethodsFindElementByAndElementClickIntoOneSingleMethodClickElementBy.html" title="Combine the methods findElementBy(type,value) and element.click into one single method clickElementBy(type,value)" class="chapter  " data-progress="5.9" style="left: 79.1044776119403%;"></a>
+    
+        <a href="../HowToUsePageObjectInBDD/HowToUsePageObjectInBDD.html" title="How to use Page Object in BDD" class="chapter  new-chapter" data-progress="6" style="left: 80.59701492537313%;"></a>
+    
+        <a href="../HowToUsePageObjectInBDD/CreateFolderStructureForPages.html" title="Create folder structure for pages" class="chapter  " data-progress="6.1" style="left: 82.08955223880596%;"></a>
+    
+        <a href="../HowToUsePageObjectInBDD/UpdateEnvRB.html" title="Update env.rb" class="chapter  " data-progress="6.10" style="left: 83.58208955223881%;"></a>
+    
+        <a href="../HowToUsePageObjectInBDD/UpdateBuyBookRB.html" title="Update buy_book.rb" class="chapter  " data-progress="6.11" style="left: 85.07462686567165%;"></a>
+    
+        <a href="../HowToUsePageObjectInBDD/UpdateRemoveBookRB.html" title="Update remove_book.rb" class="chapter  " data-progress="6.12" style="left: 86.56716417910448%;"></a>
+    
+        <a href="../HowToUsePageObjectInBDD/GenerateReportWithStyle.html" title="Generate report with style" class="chapter  " data-progress="6.13" style="left: 88.05970149253731%;"></a>
+    
+        <a href="../HowToUsePageObjectInBDD/CreateBasePageToConatinsAllMethods.html" title="Create base page to contains all methods" class="chapter  " data-progress="6.2" style="left: 89.55223880597015%;"></a>
+    
+        <a href="../HowToUsePageObjectInBDD/CreateChildPageHomePage.html" title="Create child page - home page" class="chapter  " data-progress="6.3" style="left: 91.04477611940298%;"></a>
+    
+        <a href="../HowToUsePageObjectInBDD/CreateChildPageItemDetailsPage.html" title="Create child page - item details page" class="chapter  " data-progress="6.4" style="left: 92.53731343283582%;"></a>
+    
+        <a href="../HowToUsePageObjectInBDD/CreateChildPageLoginPage.html" title="Create child page - login page" class="chapter  " data-progress="6.5" style="left: 94.02985074626865%;"></a>
+    
+        <a href="../HowToUsePageObjectInBDD/CreateChildPageSearchResultPage.html" title="Create child page - search result page" class="chapter  " data-progress="6.6" style="left: 95.5223880597015%;"></a>
+    
+        <a href="../HowToUsePageObjectInBDD/CreateChildPageShoppingCartPage.html" title="Create child page - shopping cart page" class="chapter  " data-progress="6.7" style="left: 97.01492537313433%;"></a>
+    
+        <a href="../HowToUsePageObjectInBDD/CreateChildPageWishListPage.html" title="Create child page - wish list page" class="chapter  " data-progress="6.8" style="left: 98.50746268656717%;"></a>
+    
+        <a href="../HowToUsePageObjectInBDD/UpdateBasePage.html" title="Update base page" class="chapter  " data-progress="6.9" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_30">
+                    
+                        <h1 id="run-cucumber-to-see-the-result-of-selenium-webdriver-sample-test">Run cucumber to see the result of Selenium-WebDriver sample test</h1>
+<p>Now we need to run Selenium-WebDriver sample test under &quot;Cucumber&quot; folder. Use</p>
+<p><code>cd ../..</code></p>
+<p><code>cucumber features/sample.feature</code></p>
+<p>to just run only one feature - features/sample.feature, and check the result.</p>
+<p><img src="https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/SeleniumWebDriverSampleResult.png" alt="alt text" title="Selenium-WebDriver sample Cucumber Result"></p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AbstractSearchKeywordAsAParameter.html" class="navigation navigation-prev " aria-label="Previous page: Abstract search keyword as a parameter"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../MigrateTheSeleniumWebdriverSampleToCucumberFeature/AddAssertionToBothFeatureAndStepDefinition.html" class="navigation navigation-next " aria-label="Next page: Add assertion to both feature and step definition"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../gitbook/app.js"></script>
+        
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
+    
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
