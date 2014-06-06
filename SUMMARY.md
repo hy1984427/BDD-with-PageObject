@@ -31,7 +31,7 @@
     * [Abstract the setup and tire down steps into features/support/env.rb](MigrateTheSeleniumWebdriverSampleToCucumberFeature/AbstractTheSetupAndTireDownStepsIntoFeaturesSupportEnvRb.md)
     * [Run Cucumber test with env.rb](MigrateTheSeleniumWebdriverSampleToCucumberFeature/RunCucumberTestWithEnvRb.md)
 * [Use BDD in a real world](UseBDDInARealWorld/UseBDDInARealWorld.md)
-    * [Add feature for buying book](UseBDDInARealWorld/AddBuyBookFeature)
+    * [Add feature for buying book](UseBDDInARealWorld/AddBuyBookFeature.md)
     * [Add step definitions for buying book](UseBDDInARealWorld/AddStepDefinitionsForBuyingBook.md)
     * [Abstract the step of opening site into a method](UseBDDInARealWorld/AbstractTheStepOfOpenningSiteIntoAMethod.md)
     * [Abstract the step of searching by keyword into a method](UseBDDInARealWorld/AbstractTheStepOfSearchingByKeywordIntoAMethod.md)
