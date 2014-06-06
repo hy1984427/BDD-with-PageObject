@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1402025995060
+# Revision 1402032048985
 
 CACHE:
 EnvironmentSetup/EnvironmentSetup.html
@@ -41,8 +41,8 @@ SimpleWebDriverTestByRuby/RunTheScriptWeJustInputInirb.html
 SimpleWebDriverTestByRuby/SearchByKeyword.html
 SimpleWebDriverTestByRuby/SimpleWebDriverTestByRuby.html
 StartWithCucumber/AddingFeatureFileToTestAdditionInCalculator.html
-StartWithCucumber/AddingFeatureToTestDivisionInCalculator.html
 StartWithCucumber/AddingStepDefinitionsToSupportFeatureFiles.html
+StartWithCucumber/AddingFeatureToTestDivisionInCalculator.html
 StartWithCucumber/BuildCalculatorFunctionsToTestWithInRuby.html
 StartWithCucumber/CreateCucumberFeatureFileToTestCalculator.html
 StartWithCucumber/RunCucumberFeatures.html
@@ -55,6 +55,7 @@ UseBDDInARealWorld/AbstractTheStepOfOpenningSiteIntoAMethod.html
 UseBDDInARealWorld/AbstractTheStepOfSearchingByKeywordIntoAMethod.html
 UseBDDInARealWorld/AbstractTheStepOfVerifyingItemInShoppingCartIntoMethods.html
 UseBDDInARealWorld/AddADataDrivenScenarioOfAddingBookFeature.html
+UseBDDInARealWorld/AddBuyBookFeature.html
 UseBDDInARealWorld/AddFeatureForRemovingBookFromShoppingCart.html
 UseBDDInARealWorld/AddScenarioOfAddingBookToShoppingCartFromWishList.html
 UseBDDInARealWorld/AbstractTheFindElementByAndClickElementByInStepsIntoMeaningfulMethods.html
@@ -105,8 +106,8 @@ gitbook/jsrepl/sandbox.html
 gitbook/jsrepl/sandbox.js
 gitbook/print.css
 gitbook/style.css
-gitbook/plugins/gitbook-plugin-mathjax/plugin.js
 gitbook/plugins/gitbook-plugin-mixpanel/plugin.js
+gitbook/plugins/gitbook-plugin-mathjax/plugin.js
 
 NETWORK:
 *
