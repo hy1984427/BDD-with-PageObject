@@ -1,4 +1,4 @@
-# Abstract the setup and tire down steps into features/support/env.rb
+# Extract the setup and tire down steps into features/support/env.rb
 
 To move the setup and tire down steps
 
@@ -25,4 +25,4 @@ Add add them into "features/support/env.rb":
 
 `touch env.rb`
 
-![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/SeleniumWebDriverSampleAssertionResult.png "Selenium-WebDriver sample with assertion Cucumber Result")
+![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/EditEnvRBForSample.png "Edit env.rb")

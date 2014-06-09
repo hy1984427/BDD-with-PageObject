@@ -1,4 +1,4 @@
-# Abstract the step of adding first book to shopping cart into methods: getCurrentItemTitle addToShoppingCart
+# Extract the step of adding first book to shopping cart into methods: getCurrentItemTitle addToShoppingCart
 
 Let's package the step of adding first book to shopping cart into methods: `getCurrentItemTitle` and `addToShoppingCart` in "buy_book.rb". An it should look like:
 
@@ -17,4 +17,4 @@ def addToShoppingCart
 end
 </pre></code>
 
-![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/AbstractAddingTheFirstBookToShoppingCart.png "Abstract addTheFirstBookToShoppingCart into methods")
+![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/ExtractAddingTheFirstBookToShoppingCart.png "Extract addTheFirstBookToShoppingCart into methods")

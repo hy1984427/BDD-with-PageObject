@@ -1,6 +1,6 @@
-# Abstract method find_element into a generic method findElementBy(type,value)
+# Extract method find_element into a generic method findElementBy(type,value)
 
-Too keep the method `find_element` simple and easier to use, we can abstract it into a generic method `findElementBy(type,value)`.
+To keep the method `find_element` simple and easier to use, we can extract it into a generic method `findElementBy(type,value)`.
 
 And we will rewrite the methods in "buy_book.rb" as following:
 
@@ -59,6 +59,6 @@ def findElementBy (type, value)
 end
 </pre></code>
 
-![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/AbstractFindElement1.png "Abstract FindElement and rewrite methods part 1")
+![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/ExtractFindElement1.png "Extract FindElement and rewrite methods part 1")
 
-![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/AbstractFindElement2.png "Abstract FindElement and rewrite methods part 2")
+![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/ExtractFindElement2.png "Extract FindElement and rewrite methods part 2")

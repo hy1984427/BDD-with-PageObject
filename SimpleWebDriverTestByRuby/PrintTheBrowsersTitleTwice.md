@@ -1,5 +1,7 @@
 # Print the browser's title twice
 
+*In "irb", we probably won't see the differnce between the 1st and 2nd, but if we run the script, we will do shortly, we will see the difference.*
+
 Print the browser's title in "Terminal" using `p "Page title is #{driver.title}"`.
 
 ![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/PrintBrowserTitle1.png "Print Browser Title for the first time")
@@ -16,4 +18,3 @@ And then print the browser's title again:
 
 ![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/PrintBrowserTitle2.png "Print Browser Title for the second time")
 
-*In "irb", we probably won't see the differnce between the 1st and 2nd, but if we run the script, we will do shortly, we will see the difference.*

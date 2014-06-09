@@ -1,6 +1,6 @@
 # Create Cucumber Feature file to test calculator
 
-Let's go back to Cucumber folder with `cd ..`
+Let's go into Cucumber folder with `cd ..`
 
 And `mkdir features` to create "features" folder to hold feature files.
 

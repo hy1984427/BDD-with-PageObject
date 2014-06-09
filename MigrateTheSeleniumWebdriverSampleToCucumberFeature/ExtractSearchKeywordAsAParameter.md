@@ -1,4 +1,4 @@
-# Abstract search keyword as a parameter
+# Extract search keyword as a parameter
 
 In "sample.feature", we need to change the step to:
 

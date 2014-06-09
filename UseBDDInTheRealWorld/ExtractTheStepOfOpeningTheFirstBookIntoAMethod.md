@@ -1,4 +1,4 @@
-# Abstract the step of opening the first book into a method openTheFirstItemInSearchResult
+# Extract the step of opening the first book into a method openTheFirstItemInSearchResult
 
 Let's package the step of opening the first book into a method `openTheFirstItemInSearchResult` in "buy_book.rb". An it should look like:
 
@@ -12,4 +12,4 @@ def openTheFirstItemInSearchResult
 end
 </pre></code>
 
-![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/AbstractOpenTheFirstItemInSearchResult.png "Abstract openTheFirstItemInSearchResult into a method")
+![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/ExtractOpenTheFirstItemInSearchResult.png "Extract openTheFirstItemInSearchResult into a method")

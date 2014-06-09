@@ -1,4 +1,4 @@
-# Abstract the step of searching by keyword into a method
+# Extract the step of searching by keyword into a method
 
 Let's package the step of searching by keyword into a method `searchByKeyword` in "buy_book.rb". An it should look like:
 
@@ -15,4 +15,4 @@ def searchByKeyword (keyword)
 end
 </pre></code>
 
-![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/AbstractSearchByKeyword.png "Abstract searchByKeyword into a method")
+![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/ExtractSearchByKeyword.png "Extract searchByKeyword into a method")

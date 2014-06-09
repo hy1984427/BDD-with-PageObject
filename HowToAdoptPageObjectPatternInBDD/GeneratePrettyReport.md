@@ -1,6 +1,6 @@
-# Generate report with style
+# Generate ‘pretty’ report
 
-Cucumber provides us the ability to generate report with style, we just need to use some parameters like `-f pretty -f html -o report.html`.
+Cucumber provides us the ability to generate ‘pretty’ report, we just need to use some parameters like `-f pretty -f html -o report.html`.
 
 ![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/CucumberReportStructure.png "RCucumber report structure")
 

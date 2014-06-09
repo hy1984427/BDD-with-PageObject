@@ -42,8 +42,8 @@ Then /^I should see the book in my shopping cart$/ do
 end
 </pre></code>
 
-![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/EditBuyBookRB.png "Edit buy_book.rb")
-
 *The `# encoding: utf-8` here is to support multiple languages, if you just want to use English all the time and anywhere in your test, you can get rid of it.*
+
+![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/EditBuyBookRB.png "Edit buy_book.rb")
 
 *If you need to change control to a new popuped window, you can use `@driver.switch_to.window @driver.window_handles.last`.*

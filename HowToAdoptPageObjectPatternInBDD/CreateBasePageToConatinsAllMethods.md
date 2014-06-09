@@ -113,6 +113,8 @@ def verifyItemRemovedNotShownInShoppingCart
 end
 </pre></code>
 
+*Ruby will load the pages according to their name ascendingly, so it's better to name your base page to be loaded first.*
+
 ![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/EditBasePageRB1.png "Edit base_page.rb part 1")
 
 ![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/EditBasePageRB2.png "Edit base_page.rb part 2")
@@ -124,5 +126,3 @@ Please DO remember to delete the methods we copied in "buy_book.rb" and "remove_
 ![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/EditNewBuyBookRB.png "Remove methods in buy_book.rb")
 
 ![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/EditNewRemoveBookRB.png "Remove methods in remive_book.rb")
-
-*Ruby will load the pages according to their name ascendingly, so it's better to name your base page to be loaded first.*

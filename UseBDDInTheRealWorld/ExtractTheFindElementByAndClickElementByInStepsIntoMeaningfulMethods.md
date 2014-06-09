@@ -1,4 +1,4 @@
-# Abstract findElementBy and ClickElementBy in steps into meaningful methods
+# Extract findElementBy and ClickElementBy in steps into meaningful methods
 
 We can see findElementBy and ClickElementBy are called directly in steps, it's better to give them meaningful names:
 <pre><code>And /^I add the first book to Wish List$/ do
@@ -16,7 +16,7 @@ And /^I open my shopping cart$/ do
 end
 </pre></code>
 
-So we can abstract them into methods:
+So we can extract them into methods:
 <pre><code>And /^I add the first book to Wish List$/ do
 	getCurrentItemTitle
 	addToWishList
@@ -44,6 +44,6 @@ def openShoppingCart
 end
 </pre></code>
 
-![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/AbstractFindElementBuyBookFromWishList1.png "Abstract findElementBy and clickElementBy in Buy Book from wish list part 1")
+![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/ExtractFindElementBuyBookFromWishList1.png "Extract findElementBy and clickElementBy in Buy Book from wish list part 1")
 
-![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/AbstractFindElementBuyBookFromWishList2.png "Abstract findElementBy and clickElementBy in Buy Book from wish list part 2")
+![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/ExtractFindElementBuyBookFromWishList2.png "Extract findElementBy and clickElementBy in Buy Book from wish list part 2")

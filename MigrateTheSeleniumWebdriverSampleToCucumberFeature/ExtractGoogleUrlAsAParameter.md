@@ -1,4 +1,4 @@
-# Abstract Google URL as a parameter
+# Extract Google URL as a parameter
 
 In "sample.feature", we need to change the step to:
 

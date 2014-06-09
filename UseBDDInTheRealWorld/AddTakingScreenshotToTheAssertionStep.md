@@ -6,6 +6,6 @@ In the assertion step, we just need to add one line in "verifyItemAddedShownInSh
 
 ![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/AddScreenshot.png "Add screenshot")
 
-![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/Screenshot.png "Screenshot")
-
 *The scrrenshot will be named as "screenshot.png" under "Cucumber" folder.*
+
+![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/Screenshot.png "Screenshot")

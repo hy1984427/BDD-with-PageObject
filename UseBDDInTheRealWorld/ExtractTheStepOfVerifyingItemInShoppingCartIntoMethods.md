@@ -1,4 +1,4 @@
-# Abstract the step of verifying item in shopping cart into methods
+# Extract the step of verifying item in shopping cart into methods
 
 Let's package the step of verifying item in shopping cart into methods: `verifyItemAddedToShoppingCart` and `verifyItemAddedShownInShoppingCart` in "buy_book.rb". An it should look like:
 
@@ -18,4 +18,4 @@ def verifyItemAddedShownInShoppingCart
 end
 </pre></code>
 
-![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/AbstractVerifyingItemInShoppingCart.png "Abstract verifyItemInShoppingCart into methods")
+![alt text](https://raw.githubusercontent.com/hy1984427/BDD-with-PageObject/master/images/ExtractVerifyingItemInShoppingCart.png "Extract verifyItemInShoppingCart into methods")

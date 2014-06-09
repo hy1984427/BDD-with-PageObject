@@ -1,4 +1,4 @@
-# How to use Page Object in BDD
+# How to adopt Page Object Pattern in BDD
 
 In this chapter, we will see how to refactor the example in last chapter to use page object.
 
