@@ -21,6 +21,10 @@ Then /^I should not see the book in my shopping cart$/ do
 	verifyItemRemovedNotShownInShoppingCart
 end
 
+def openShoppingCart
+    clickElementBy("id","nav-cart")
+end
+
 def removeTheFirstItem
 	sleep (10) #it's better to wait for js or AJAX executed complete, but there is not a general way we can follow in industry
 	clickElementBy("xpath","//span[@class=\"a-declarative\"]/input")
